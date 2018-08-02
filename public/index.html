@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Brew What?</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <textarea class="result" autofocus placeholder="Paste the output from `brew list` here"></textarea>
+  <pre  class="result" hidden></pre>
+  <div id="controls">
+    <button title="Use ctrl+enter to load">
+      Load brew descriptions
+    </button>
+  </div>
+  <footer>
+    <p>
+      <span>Built by @rem</span>
+      <span class="tweet">
+        <a href="https://twitter.com/rem" class="twitter-follow-button" data-show-count="false" target="_blank">Follow @rem</a>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://brew-what.isthe.link" data-text="Quick tool for checking descriptions of all your brew installed packages"
+          data-via="rem" data-related="rem" target="_blank">Tweet</a>
+      </span>
+    </p>
+  </footer>
+  <script src="index.js"></script>
+  <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+
+</body>
+
+</html>
